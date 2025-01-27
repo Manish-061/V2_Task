@@ -67,20 +67,6 @@ A web-based application that allows users to dynamically generate and customize 
 3. Click #Generate to render the pattern.
 4. Export the generated pattern by clicking the Export button.
 
-# Folder Structure
-pattern-generator/
-├── public/
-│   ├── css/
-│   │   └── styles.css          # Styles for the frontend
-│   ├── js/
-│      └── script.js           # Client-side logic and rendering
-├── views/
-│   ├── index.ejs               # Main template file
-├── app.js                      # Entry point for the backend
-├── package.json                # Node.js dependencies and metadata
-├── README.md                   # Documentation
-
-
 ## Functionalities
 1. Dynamic Pattern Rendering:
    - Real-time generation of patterns using the Canvas API.
