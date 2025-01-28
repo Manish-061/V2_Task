@@ -30,6 +30,9 @@ app.use((req, res) => {
   res.status(404).send('404 - Not Found');
 });
 
+require('dotenv').config();
+const DB_URI = process.env.DB_URI || "mongodb://127.0.0.1:27017/pattern_generator";
+
 
 // Start the server
 const PORT = 3000;
