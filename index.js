@@ -22,6 +22,15 @@ app.get('/', (req, res) => {
   res.render('index'); // Render the `index.ejs` file in the `views/` folder
 });
 
+app.get('/api', (req, res) => {
+  res.json({ message: "API is working!" });
+});
+
+app.use((req, res) => {
+  res.status(404).send('404 - Not Found');
+});
+
+
 // Start the server
 const PORT = 3000;
 app.listen(PORT, () => {
